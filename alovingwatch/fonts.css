@@ -1,0 +1,28 @@
+ @font-face {
+    font-family: RupsterScriptFree;
+    src: url(fonts/RupsterScriptFree.ttf);
+   }
+@font-face {
+    font-family: Arial-founded;
+    src: url(fonts/Arial_rounded.TTF);
+}
+@font-face {
+    font-family: Blogger-sans-bold;
+    src: url(fonts/Blogger_sans_bold.ttf);
+}
+@font-face {
+    font-family: Georgia-alt;
+    src: url(font/georgia.ttf);
+}
+@font-face {
+    font-family: Kelson-sans-ru-regular;
+    src: url(fonts/Kelson_sans_ru_regular.otf);
+}
+@font-face {
+    font-family: Kelson-sans-ru-bold;
+    src: url(fonts/Kelson_sans_ru_bold.otf);
+}
+@font-face{
+    font-family: Frezer;
+    src:url (fonts/frezer.ttf.ttf);
+}

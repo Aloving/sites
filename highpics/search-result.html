@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Теги поиска | HighPics</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/search-result-style.css">
+	<link rel="icon" type="image/png" href="img/favicon.png" >
+</head>
+<body>
+	<!-- верхнее меню навигации -->
+	<div class="nav-bar">
+		<div class="container-fluid"> <!-- резиновый блок бутстрап для меню -->
+			<section class="nav-logo"> <!-- секция с лого -->
+				<a href="#"><img src="img/logo.png" alt=""></a>
+			</section>
+			<div class="row">
+				<div class="span4">
+					<section class="left-section">				<!-- Левая часть меню (навигация) -->
+						<ul class="hidden-xs">
+							<li><a href="index.html">Лучшее</a></li>
+							<li><a href="new.html">Новое</a></li>
+							<li><a href="sets.html">Сеты</a></li>
+
+						</ul>
+						<ul class="nav-xs hidden-lg hidden-md hidden-sm col-xs-12">
+							<li><a href="index.html" class="active"><i class="fa fa-home"></i></a></li>
+							<li><a href="new.html"><i class="fa fa-newspaper-o"></i></a></li>
+							<li><a href="sets.html"><i class="fa fa-archive"></i></a></li>
+							<li><a href="search-result.html"><i class="fa fa-search"></i></a></li>
+						</ul>
+
+					</section>
+				</div>
+				<div class="span4">
+					<div class="right-section">					<!-- Правая часть меню(поиск и профиль) -->
+						<section class="search hidden-xs">
+							<input type="text" id="search" placeholder="Поиск фото..." />
+								<form action="#"><button class="icon"><i class="fa fa-search"></i></button></form>
+						</section>
+						<section class="sign-up-section">
+							<form action="login.html"><button class="log-in">
+								Войти
+							</button></form>
+							<form action="sign-up.html"><button class="sign-up hidden-xs">
+								Регистрация
+							</button></form>
+						</section>			
+						<!--<section class="avatara"><a href="#"><img src="img/camera-256-000000.png" alt=""></a>
+						</section>-->
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pre-main-bar">						<!-- Кнопка добавить и кнопки соц сетей -->
+			<div class="container">
+				<div class="row">						<!-- row соц сетей -->
+					<div class="span12">
+						<ul>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-vk"></i></a></li>
+							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">						<!-- row кнопки "добавить фото" -->
+					<div class="span12">
+						<!--<div class="add-photo">
+							<form action="#"><input type="button" value="добавить фото"></form>
+						</div>-->
+						<section class="search-result">
+							<p>
+								Теги поиска
+							</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Основная часть -->
+		<main>
+		<div class="new photo-1">																		<!-- div фотографии	 -->	
+			<div class="container">	
+				<div class="row">			<!-- row для секции с автором работает только в col-xs -->
+					<section class="author-xs hidden-lg hidden-md hidden-sm col-xs-12">				
+							<a href="account.html"><img src="img/rita.png" alt=""></a>
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+				</div>		
+				<div class="row">																		<!-- row преью фотографии -->
+					<div class="span12">																<!-- фото занимает 12 колонок,всегда-->
+						<div class="new-photo">
+							<a href="#"><img src="http://lorempixel.com/1170/660" alt="photo-1"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">																		<!-- row действий с фото (лайк,добавить,автор,скачать) -->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<section class="photo-description">												<!-- Секция дескрипшинов -->
+							<button class="not-like"><i class="fa fa-heart"></i><span class="like-count">10</span></button>
+							<button class="not-added"><i class="fa fa-plus"></i></button>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<section class="author">															<!-- Секция автора -->
+							<a href="account.html"><img src="img/rita.png" alt=""></a>		
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-1 col-lg-offset-1 col-md-offset-1">
+						<section class="download-button">													<!-- Секция кнопки загрузки -->
+							<form action="#"><button class="download hidden-xs">Скачать</button></form>
+							<form action="#"><button class="download-xs hidden-lg hidden-md hidden-sm"><i class="fa fa-download"></i></button></form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="new photo-2">																		<!-- div фотографии	 -->	
+			<div class="container">	
+				<div class="row">			<!-- row для секции с автором работает только в col-xs -->
+					<section class="author-xs hidden-lg hidden-md hidden-sm col-xs-12">				
+							<a href="account.html"><img src="img/rita.png" alt=""></a>
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+				</div>		
+				<div class="row">																		<!-- row преью фотографии -->
+					<div class="span12">																<!-- фото занимает 12 колонок,всегда-->
+						<div class="new-photo">
+							<a href="#"><img src="http://lorempixel.com/1170/660" alt="photo-1"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">																		<!-- row действий с фото (лайк,добавить,автор,скачать) -->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<section class="photo-description">												<!-- Секция дескрипшинов -->
+							<button class="not-like"><i class="fa fa-heart"></i><span class="like-count">10</span></button>
+							<button class="not-added"><i class="fa fa-plus"></i></button>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<section class="author">															<!-- Секция автора -->
+							<a href="account.html"><img src="img/rita.png" alt=""></a>		
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-1 col-lg-offset-1 col-md-offset-1">
+						<section class="download-button">													<!-- Секция кнопки загрузки -->
+							<form action="#"><button class="download hidden-xs">Скачать</button></form>
+							<form action="#"><button class="download-xs hidden-lg hidden-md hidden-sm"><i class="fa fa-download"></i></button></form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="new photo-3">																		<!-- div фотографии	 -->	
+			<div class="container">	
+				<div class="row">			<!-- row для секции с автором работает только в col-xs -->
+					<section class="author-xs hidden-lg hidden-md hidden-sm col-xs-12">				
+							<a href="account.html"><img src="img/rita.png" alt=""></a>
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+				</div>		
+				<div class="row">																		<!-- row преью фотографии -->
+					<div class="span12">																<!-- фото занимает 12 колонок,всегда-->
+						<div class="new-photo">
+							<a href="#"><img src="http://lorempixel.com/1170/660" alt="photo-1"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">																		<!-- row действий с фото (лайк,добавить,автор,скачать) -->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<section class="photo-description">												<!-- Секция дескрипшинов -->
+							<button class="not-like"><i class="fa fa-heart"></i><span class="like-count">10</span></button>
+							<button class="not-added"><i class="fa fa-plus"></i></button>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<section class="author">															<!-- Секция автора -->
+							<a href="account.html"><img src="img/rita.png" alt=""></a>				
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-1 col-lg-offset-1 col-md-offset-1">
+						<section class="download-button">													<!-- Секция кнопки загрузки -->
+							<form action="#"><button class="download hidden-xs">Скачать</button></form>
+							<form action="#"><button class="download-xs hidden-lg hidden-md hidden-sm"><i class="fa fa-download"></i></button></form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="new photo-4">																		<!-- div фотографии	 -->	
+			<div class="container">	
+				<div class="row">			<!-- row для секции с автором работает только в col-xs -->
+					<section class="author-xs hidden-lg hidden-md hidden-sm col-xs-12">				
+							<a href="account.html"><img src="img/rita.png" alt=""></a>
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+				</div>		
+				<div class="row">																		<!-- row преью фотографии -->
+					<div class="span12">																<!-- фото занимает 12 колонок,всегда-->
+						<div class="new-photo">
+							<a href="#"><img src="http://lorempixel.com/1170/660" alt="photo-4"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">																		<!-- row действий с фото (лайк,добавить,автор,скачать) -->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<section class="photo-description">												<!-- Секция дескрипшинов -->
+							<button class="not-like"><i class="fa fa-heart"></i><span class="like-count">10</span></button>
+							<button class="not-added"><i class="fa fa-plus"></i></button>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<section class="author">															<!-- Секция автора -->
+							<a href="account.html"><img src="img/rita.png" alt=""></a>			
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-1 col-lg-offset-1 col-md-offset-1">
+						<section class="download-button">													<!-- Секция кнопки загрузки -->
+							<form action="#"><button class="download hidden-xs">Скачать</button></form>
+							<form action="#"><button class="download-xs hidden-lg hidden-md hidden-sm"><i class="fa fa-download"></i></button></form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="new photo-5">																		<!-- div фотографии	 -->	
+			<div class="container">	
+				<div class="row">			<!-- row для секции с автором работает только в col-xs -->
+					<section class="author-xs hidden-lg hidden-md hidden-sm col-xs-12">				
+							<a href="account.html"><img src="img/rita.png" alt=""></a>
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+				</div>		
+				<div class="row">																		<!-- row преью фотографии -->
+					<div class="span12">																<!-- фото занимает 12 колонок,всегда-->
+						<div class="new-photo">
+							<a href="#"><img src="http://lorempixel.com/1170/660" alt="photo-5"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">																		<!-- row действий с фото (лайк,добавить,автор,скачать) -->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<section class="photo-description">												<!-- Секция дескрипшинов -->
+							<button class="not-like"><i class="fa fa-heart"></i><span class="like-count">10</span></button>
+							<button class="not-added"><i class="fa fa-plus"></i></button>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<section class="author">															<!-- Секция автора -->
+							<a href="account.html"><img src="img/rita.png" alt=""></a>			
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-1 col-lg-offset-1 col-md-offset-1">
+						<section class="download-button">													<!-- Секция кнопки загрузки -->
+							<form action="#"><button class="download hidden-xs">Скачать</button></form>
+							<form action="#"><button class="download-xs hidden-lg hidden-md hidden-sm"><i class="fa fa-download"></i></button></form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="new photo-6">																		<!-- div фотографии	 -->	
+			<div class="container">	
+				<div class="row">			<!-- row для секции с автором работает только в col-xs -->
+					<section class="author-xs hidden-lg hidden-md hidden-sm col-xs-12">				
+							<a href="account.html"><img src="img/rita.png" alt=""></a>
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+				</div>		
+				<div class="row">																		<!-- row преью фотографии -->
+					<div class="span12">																<!-- фото занимает 12 колонок,всегда-->
+						<div class="new-photo">
+							<a href="#"><img src="http://lorempixel.com/1170/660" alt="photo-6"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">																		<!-- row действий с фото (лайк,добавить,автор,скачать) -->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<section class="photo-description">												<!-- Секция дескрипшинов -->
+							<button class="not-like"><i class="fa fa-heart"></i><span class="like-count">10</span></button>
+							<button class="not-added"><i class="fa fa-plus"></i></button>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<section class="author">															<!-- Секция автора -->
+							<a href="account.html"><img src="img/rita.png" alt=""></a>			
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-1 col-lg-offset-1 col-md-offset-1">
+						<section class="download-button">													<!-- Секция кнопки загрузки -->
+							<form action="#"><button class="download hidden-xs">Скачать</button></form>
+							<form action="#"><button class="download-xs hidden-lg hidden-md hidden-sm"><i class="fa fa-download"></i></button></form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="new photo-1">																		<!-- div фотографии	 -->	
+			<div class="container">	
+				<div class="row">			<!-- row для секции с автором работает только в col-xs -->
+					<section class="author-xs hidden-lg hidden-md hidden-sm col-xs-12">				
+							<a href="account.html"><img src="img/rita.png" alt=""></a>
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+				</div>		
+				<div class="row">																		<!-- row преью фотографии -->
+					<div class="span12">																<!-- фото занимает 12 колонок,всегда-->
+						<div class="new-photo">
+							<a href="#"><img src="http://lorempixel.com/1170/660" alt="photo-7"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">																		<!-- row действий с фото (лайк,добавить,автор,скачать) -->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<section class="photo-description">												<!-- Секция дескрипшинов -->
+							<button class="not-like"><i class="fa fa-heart"></i><span class="like-count">10</span></button>
+							<button class="not-added"><i class="fa fa-plus"></i></button>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<section class="author">															<!-- Секция автора -->
+							<a href="account.html"><img src="img/rita.png" alt=""></a>		
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-1 col-lg-offset-1 col-md-offset-1">
+						<section class="download-button">													<!-- Секция кнопки загрузки -->
+							<form action="#"><button class="download hidden-xs">Скачать</button></form>
+							<form action="#"><button class="download-xs hidden-lg hidden-md hidden-sm"><i class="fa fa-download"></i></button></form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="new photo-8">																		<!-- div фотографии	 -->	
+			<div class="container">	
+				<div class="row">			<!-- row для секции с автором работает только в col-xs -->
+					<section class="author-xs hidden-lg hidden-md hidden-sm col-xs-12">				
+							<a href="account.html"><img src="img/rita.png" alt=""></a>
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+				</div>		
+				<div class="row">																		<!-- row преью фотографии -->
+					<div class="span12">																<!-- фото занимает 12 колонок,всегда-->
+						<div class="new-photo">
+							<a href="#"><img src="http://lorempixel.com/1170/660" alt="photo-8"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">																		<!-- row действий с фото (лайк,добавить,автор,скачать) -->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<section class="photo-description">												<!-- Секция дескрипшинов -->
+							<button class="not-like"><i class="fa fa-heart"></i><span class="like-count">10</span></button>
+							<button class="not-added"><i class="fa fa-plus"></i></button>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<section class="author">															<!-- Секция автора -->
+							<a href="account.html"><img src="img/rita.png" alt=""></a>				
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-1 col-lg-offset-1 col-md-offset-1">
+						<section class="download-button">													<!-- Секция кнопки загрузки -->
+							<form action="#"><button class="download hidden-xs">Скачать</button></form>
+							<form action="#"><button class="download-xs hidden-lg hidden-md hidden-sm"><i class="fa fa-download"></i></button></form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="new photo-9">																		<!-- div фотографии	 -->	
+			<div class="container">	
+				<div class="row">			<!-- row для секции с автором работает только в col-xs -->
+					<section class="author-xs hidden-lg hidden-md hidden-sm col-xs-12">				
+							<a href="account.html"><img src="img/rita.png" alt=""></a>
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+				</div>		
+				<div class="row">																		<!-- row преью фотографии -->
+					<div class="span12">																<!-- фото занимает 12 колонок,всегда-->
+						<div class="new-photo">
+							<a href="#"><img src="http://lorempixel.com/1170/660" alt="photo-9"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">																		<!-- row действий с фото (лайк,добавить,автор,скачать) -->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<section class="photo-description">												<!-- Секция дескрипшинов -->
+							<button class="not-like"><i class="fa fa-heart"></i><span class="like-count">10</span></button>
+							<button class="not-added"><i class="fa fa-plus"></i></button>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<section class="author">															<!-- Секция автора -->
+							<a href="account.html"><img src="img/rita.png" alt=""></a>				
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-1 col-lg-offset-1 col-md-offset-1">
+						<section class="download-button">													<!-- Секция кнопки загрузки -->
+							<form action="#"><button class="download hidden-xs">Скачать</button></form>
+							<form action="#"><button class="download-xs hidden-lg hidden-md hidden-sm"><i class="fa fa-download"></i></button></form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="new photo-10">																		<!-- div фотографии	 -->	
+			<div class="container">	
+				<div class="row">			<!-- row для секции с автором работает только в col-xs -->
+					<section class="author-xs hidden-lg hidden-md hidden-sm col-xs-12">				
+							<a href="account.html"><img src="img/rita.png" alt=""></a>
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+				</div>		
+				<div class="row">																		<!-- row преью фотографии -->
+					<div class="span12">																<!-- фото занимает 12 колонок,всегда-->
+						<div class="new-photo">
+							<a href="#"><img src="http://lorempixel.com/1170/660" alt="photo-10"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">																		<!-- row действий с фото (лайк,добавить,автор,скачать) -->
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<section class="photo-description">												<!-- Секция дескрипшинов -->
+							<button class="not-like"><i class="fa fa-heart"></i><span class="like-count">10</span></button>
+							<button class="not-added"><i class="fa fa-plus"></i></button>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+						<section class="author">															<!-- Секция автора -->
+							<a href="account.html"><img src="img/rita.png" alt=""></a>			
+							<a href="account.html"><h2>Короткова Маргарита</h2></a>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-1 col-lg-offset-1 col-md-offset-1">
+						<section class="download-button">													<!-- Секция кнопки загрузки -->
+							<form action="#"><button class="download hidden-xs">Скачать</button></form>
+							<form action="#"><button class="download-xs hidden-lg hidden-md hidden-sm"><i class="fa fa-download"></i></button></form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="load-more-button">
+			<div class="container">
+				<div class="span12">
+					<form action="#"><button>Загрузить больше</button></form>
+				</div>
+			</div>
+		</div>
+		</main>
+		<div class="pre-footer">
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+						<section class="footer-logo"><img src="img/logo.png" alt=""></section>
+					</div>
+					<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-xs-12">
+						<p>Информация</p>
+						<ul>
+							<li><a href="#">О сайте</a></li>
+							<li><a href="#">Лицензия</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Что нового?</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-xs-12 ">
+						<p>Связь с нами</p>
+						<ul>
+							<li><a href="#">Instagram</a></li>
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">VKontakte</a></li>
+							<li><a href="#">Facebook</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+		<script src="js/headhesive.min.js"></script>
+		<script src="js/myScript.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

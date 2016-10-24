@@ -1,0 +1,574 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background-image: url(../images/back_body.png);
+  background-color: #fff1f1;
+}
+
+header {
+  box-shadow: 1px 0px 5px black;
+  background-color: #ef4836;
+}
+header .navbar {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: none;
+}
+header .navbar-nav > .active {
+  color: #d5ff20;
+}
+header .navbar-nav > li > a {
+  font: bold 18px arial;
+  padding: 22px 20px 20px 20px;
+  transition: 0.3s;
+}
+header .navbar-nav > li > a:hover {
+  color: #1968cc !important;
+}
+@media screen and (max-width: 768px) {
+  header .navbar-nav > li > a {
+    padding-top: 22px;
+    padding-bottom: 20px;
+  }
+}
+
+.wrapper {
+  margin: 32px auto 0;
+  max-width: 1170px;
+}
+.wrapper .second-header {
+  *zoom: 1;
+}
+.wrapper .second-header:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.wrapper .second-header .search {
+  background-color: #1968cc;
+  padding: 8px 12px;
+  border-radius: 15px;
+  float: left;
+  box-shadow: 0px 0 5px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+}
+.wrapper .second-header .search:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.wrapper .second-header .search input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  height: 30px;
+  display: block;
+  float: left;
+  font: 12px arial;
+  width: 300px;
+  white-space: nowrap;
+}
+.wrapper .second-header .search i {
+  margin-top: 5px;
+  margin-left: 12px;
+  color: #fff;
+  font-size: 22px;
+}
+.wrapper .second-header .auth-wrapper {
+  z-index: 50;
+  position: relative;
+  float: right;
+}
+.wrapper .second-header .auth-wrapper .absolute-block {
+  position: absolute;
+  width: 260px;
+  top: 45px;
+}
+.wrapper .second-header .auth-wrapper #auth-button {
+  cursor: pointer;
+  box-shadow: 0px 0 5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: #fff;
+  padding: 13px 0;
+  text-align: center;
+  display: block;
+  width: 260px;
+  background-color: #1968cc;
+  font: 400 18px arial;
+  transition: 0.3s;
+}
+.wrapper .second-header .auth-wrapper #auth-button:hover {
+  text-decoration: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.wrapper .second-header .auth-wrapper .auth-form {
+  text-align: center;
+  overflow: auto;
+  border-radius: 10px;
+  padding: 0px 10px 15px 15px;
+  position: absolute;
+  top: 225px;
+  display: none;
+  opacity: 0;
+  box-shadow: 0px 0 5px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  background-color: #1968cc;
+}
+.wrapper .second-header .auth-wrapper .auth-form:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.wrapper .second-header .auth-wrapper .auth-form input {
+  margin-top: 15px;
+  font: 14px arial;
+  padding-left: 10px;
+  width: 229px;
+  font: 14px arial;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 32px;
+  white-space: nowrap;
+}
+.wrapper .second-header .auth-wrapper .auth-form input:first-child {
+  margin-top: 25px;
+}
+.wrapper .second-header .auth-wrapper .auth-form button {
+  margin-top: 15px;
+  background-color: #ef4836;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font: 600 14px arial;
+  padding: 8px 22px;
+  width: 100%;
+}
+.wrapper .second-header .auth-wrapper .auth-form .fog-pass {
+  font: 400 14px arial;
+  color: #fff;
+  display: block;
+  padding: 15px 0px 5px;
+}
+.wrapper .slider {
+  margin-top: 50px;
+}
+.wrapper .carousel {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  margin: 0 !important;
+  padding: 0 !important;
+  transition: box-shadow 0.5s;
+}
+.wrapper .carousel:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.wrapper .carousel .carousel-caption h3 {
+  margin-bottom: 20px;
+  font: 600 3em Arial;
+}
+.wrapper .carousel .carousel-caption p {
+  font: 1em Arial;
+}
+.wrapper .carousel .carousel-indicators {
+  height: 0;
+  right: 5%;
+  position: absolute;
+  top: 20px;
+  z-index: 15;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.wrapper .carousel .carousel-indicators .active {
+  margin-bottom: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 1 !important;
+}
+.wrapper .carousel .carousel-indicators li {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  border: none;
+  background-color: #ff1e06;
+  opacity: 0.5;
+  width: 19px;
+  height: 19px;
+}
+.wrapper .carousel .item img {
+  width: 100% !important;
+}
+.wrapper .main {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.wrapper .main .news {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  height: 100%;
+  transition: 0.3s box-shadow;
+  padding-bottom: 30px;
+}
+.wrapper .main .news:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.wrapper .main .news .new {
+  box-sizing: border-box;
+  overflow: auto;
+  max-width: 660px;
+  margin: 60px auto 0;
+}
+.wrapper .main .news .new .img-div {
+  margin-top: 20px;
+  text-align: center;
+}
+.wrapper .main .news .new .new-article {
+  padding: 10px 0 10px 20px;
+  border-left: 6px solid #ef4836;
+  font: 400 1.250em arial;
+}
+.wrapper .main .news .new .new-image {
+  max-width: 560px;
+  max-height: 342px;
+}
+.wrapper .main .news .new .new-article-pre-text {
+  padding: 25px 0 0;
+  font: 600 1em arial;
+}
+.wrapper .main .news .new .new-text {
+  margin: 25px 0;
+  font: 0.850em arial;
+  line-height: 20px;
+}
+.wrapper .main .news .new .new-link {
+  text-decoration: underline;
+  font: 0.950em arial;
+  color: #0d56b2;
+  float: right;
+}
+.wrapper .main .news .new .clear-some {
+  width: 100%;
+  background-color: #fff;
+}
+.wrapper .main .news .news-styles .gradient {
+  height: 100px;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc5bf+0,ffb6ad+100&1+0,0+85 */
+  background: -moz-linear-gradient(top, #ffc5bf 0%, rgba(255, 184, 176, 0) 85%, rgba(255, 182, 173, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffc5bf 0%, rgba(255, 184, 176, 0) 85%, rgba(255, 182, 173, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffc5bf 0%, rgba(255, 184, 176, 0) 85%, rgba(255, 182, 173, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc5bf', endColorstr='#00ffb6ad',GradientType=0 );
+  /* IE6-9 */
+}
+.wrapper .main .news .news-styles .gradient h1 {
+  padding: 25px 0 0 90px;
+  font: 600 1.450em arial;
+  color: #000;
+}
+.wrapper .main .news .news-styles .flag {
+  position: absolute;
+  top: -4px;
+  left: 42px;
+  background-color: #ef4836;
+  width: 48px;
+  height: 88px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 70%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 70%, 0 100%);
+}
+.wrapper .main .news .news-styles .flag i {
+  margin: 20px 10px 10px;
+  font-size: 24px;
+  color: #fff;
+}
+.wrapper .main .sidebar {
+  height: 100%;
+  padding-bottom: 35px;
+  overflow: auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  width: 360px;
+}
+.wrapper .main .sidebar:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.wrapper .main .sidebar .sidebar-styles .gradient {
+  height: 90px;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9cbae0+0,9cbae0+100&1+0,0+100 */
+  background: -moz-linear-gradient(top, #9cbae0 0%, rgba(156, 186, 224, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #9cbae0 0%, rgba(156, 186, 224, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9cbae0 0%, rgba(156, 186, 224, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cbae0', endColorstr='#009cbae0',GradientType=0 );
+  /* IE6-9 */
+}
+.wrapper .main .sidebar .sidebar-styles .gradient h1 {
+  padding: 25px 0 0 90px;
+  font: 600 1.450em arial;
+  color: #000;
+}
+.wrapper .main .sidebar .sidebar-styles .flag {
+  position: absolute;
+  top: -4px;
+  left: 42px;
+  background-color: #0d56b2;
+  width: 48px;
+  height: 88px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 70%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 70%, 0 100%);
+}
+.wrapper .main .sidebar .sidebar-styles .flag i {
+  margin: 20px 12px 10px;
+  font-size: 24px;
+  color: #fff;
+}
+.wrapper .main .sidebar .comm {
+  *zoom: 1;
+  padding-top: 25px;
+  font-family: arial;
+  margin: 0 auto;
+  max-width: 285px;
+}
+.wrapper .main .sidebar .comm:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.wrapper .main .sidebar .comm .author {
+  font-size: 1.050em;
+  font-weight: 600;
+}
+.wrapper .main .sidebar .comm .topic {
+  font-size: 1.050em;
+}
+.wrapper .main .sidebar .comm .comm-date {
+  margin-top: 10px;
+}
+.wrapper .main .sidebar .comm .comm-date i {
+  color: #a1a1a1;
+  float: left;
+  font-size: 0.850em;
+}
+.wrapper .main .sidebar .comm .comm-date p {
+  color: #a1a1a1;
+  margin-left: 15px;
+  font-size: 0.850em;
+}
+.wrapper .main .sidebar .comm .link {
+  float: right;
+  font-size: 0.950em;
+  text-decoration: underline;
+}
+.wrapper .main .sidebar .heroes {
+  padding-top: 40px;
+}
+.wrapper .main .sidebar .heroes .heroes-style {
+  height: 60px;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d56b2+0,7db9e8+100&1+0,0+100 */
+  background: -moz-linear-gradient(left, #0d56b2 0%, rgba(125, 185, 232, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #0d56b2 0%, rgba(125, 185, 232, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #0d56b2 0%, rgba(125, 185, 232, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d56b2', endColorstr='#007db9e8',GradientType=1 );
+  /* IE6-9 */
+}
+.wrapper .main .sidebar .heroes .heroes-style img {
+  float: left;
+  height: 58px;
+  margin-left: 20px;
+}
+.wrapper .main .sidebar .heroes .heroes-style h1 {
+  font: 600 24px arial;
+  color: #000;
+  padding-top: 15px;
+  margin-left: 80px;
+}
+.wrapper .main .sidebar .heroes .heroes-list ul li {
+  position: relative;
+  background-color: #000;
+  margin: 10px 0;
+}
+.wrapper .main .sidebar .heroes .heroes-list ul li a {
+  padding: 4px 0 0 30px;
+  display: block;
+  width: 100%;
+  height: 25px;
+  font: 600 14px arial;
+  color: #fff;
+}
+.wrapper .main .sidebar .heroes .heroes-list ul li a img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
+  transition: opacity 0.2s;
+}
+.wrapper .main .sidebar .heroes .heroes-list ul li a span {
+  position: absolute;
+  z-index: 10;
+}
+.wrapper .main .sidebar .heroes .heroes-list ul li a:hover {
+  text-decoration: none;
+}
+.wrapper .main .sidebar .heroes .heroes-list ul li a:hover img {
+  opacity: 1;
+}
+.wrapper .main .sidebar .heroes .socki {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 28px;
+}
+.wrapper .main .sidebar .heroes .socki a {
+  margin-left: 10px;
+  color: #000;
+  opacity: 0.5;
+}
+.wrapper .main .sidebar .heroes .socki a:hover {
+  opacity: 1;
+}
+.wrapper .main .paginations {
+  padding-bottom: 30px;
+  text-align: center;
+  margin-top: 60px;
+}
+.wrapper .main .paginations .active {
+  background-color: #1968cc;
+}
+.wrapper .main .paginations .t-dots {
+  margin-top: 10px;
+  color: #ef4836;
+  background-color: #fff;
+}
+.wrapper .main .paginations .t-dots:hover {
+  background-color: #fff;
+}
+.wrapper .main .paginations a {
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 0 2px;
+  background-color: #ef4836;
+  color: #fff;
+  font: arial 18px;
+  font-weight: 600;
+  transition: 0.2s background-color;
+}
+.wrapper .main .paginations a:hover {
+  text-decoration: none;
+  background-color: #1968cc;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #1968cc;
+}
+footer .wraper {
+  height: 120px;
+  padding: 25px 0 25px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+footer .wraper .logo {
+  padding-top: 20px;
+  float: left;
+}
+footer .wraper .logo h4 {
+  color: #f3f8ff;
+  font: 36px arial;
+  font-weight: 600;
+}
+footer .wraper .logo h4 span {
+  color: #d5ff20;
+}
+footer .wraper .right-block {
+  padding-top: 10px;
+  margin-right: 100px;
+  text-align: center;
+  float: right;
+}
+footer .wraper .right-block .foot-soc {
+  margin-right: 30px;
+  width: 400px;
+}
+footer .wraper .right-block .foot-soc a {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border: 2px solid #ef4836;
+  margin: 0 10px;
+  font-size: 30px;
+  color: #fff;
+  transition: 0.3s;
+}
+footer .wraper .right-block .foot-soc a:hover {
+  background-color: #d5ff20;
+}
+footer .wraper .right-block .copyright {
+  font: 20px arial;
+  color: #fff;
+  margin-top: 20px;
+}

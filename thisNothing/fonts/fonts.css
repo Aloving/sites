@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Grand Hotel';
+    src: local('Grand Hotel'), local('GrandHotel-Regular'), url('grandhotel.woff2') format('woff2'), url('grandhotel.woff') format('woff'), url('grandhotel.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Flow Ext';
+    src: local('Flow Ext'), local('FlowExt'), url('flowext.woff2') format('woff2'), url('flowext.woff') format('woff'), url('flowext.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Flow Ext';
+    src: local('Flow Ext Bold'), local('FlowExt-Bold'), url('flowextbold.woff2') format('woff2'), url('flowextbold.woff') format('woff'), url('flowextbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: House;
+    src: url('House-Paint-Slab.ttf');
+}
+@font-face{
+    font-family: Dimitri;
+    src: url('DIMITRI_.TTF');
+}
+@font-face {
+    font-family: 'Peace Sans';
+    src: local('Peace Sans'), local('PeaceSans'), url('Peacesans.woff2') format('woff2'), url('Peacesans.woff') format('woff'), url('Peacesans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

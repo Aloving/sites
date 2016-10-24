@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Grand Hotel';
+    src: local('Grand Hotel'), local('GrandHotel-Regular'), url('grandhotel.woff2') format('woff2'), url('grandhotel.woff') format('woff'), url('grandhotel.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
